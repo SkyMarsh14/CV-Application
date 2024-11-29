@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Education from "./Education";
 
 export default function Form({setGeneralInfo}) {
     function updateInput(e){
@@ -7,11 +8,11 @@ export default function Form({setGeneralInfo}) {
             {...previous, [id]:value}
         ) )
     }
+
     return (
         <form>
             <fieldset>
                 <legend>General Information</legend>
-
                 <div className="firstName">
                     <label>First Name : </label>
                     <input id="firstName" onChange={updateInput}></input>
@@ -36,27 +37,8 @@ export default function Form({setGeneralInfo}) {
                 </div>
 
             </fieldset>
-            <fieldset>
-                <legend>Educational background</legend>
-
-                <div>
-                    <label>School Name : </label>
-                    <input></input>
-                </div>
-
-                <div>
-                    <label htmlFor="">Year : </label>
-                    <input type="number" /></div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Experience</legend>
-
-                <div>
-                    <label htmlFor="">Company Name</label>
-                    <input type="text" />
-                </div>
-            </fieldset>
+            <Education></Education>
         </form>
     )
 }
+

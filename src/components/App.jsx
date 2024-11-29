@@ -16,8 +16,8 @@ export default function App(){
 
 
 const exampleGeneralInfo={
-    firstName:"Randy",
-    lastName:"Marsh",
+    firstName:"John",
+    lastName:"Smith",
     jobTitle:"Software Engineer",
     number: "555-555-5555",
     email:"example@gmail.com"
