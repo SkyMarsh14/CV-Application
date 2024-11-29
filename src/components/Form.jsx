@@ -8,7 +8,6 @@ export default function Form({setGeneralInfo}) {
             {...previous, [id]:value}
         ) )
     }
-
     return (
         <form>
             <fieldset>
@@ -37,8 +36,7 @@ export default function Form({setGeneralInfo}) {
                 </div>
 
             </fieldset>
-            <Education></Education>
+            <Education />
         </form>
     )
 }
-

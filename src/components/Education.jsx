@@ -1,13 +1,17 @@
 import { useState } from "react"
 
 export default function Education() {
-    const [count, setCount]=useState(0);
+    const [schoolField,setSchoolField]=useState([<School key={0} />])
+    function handleAdd(e){
+        e.preventDefault();
+        setSchoolField([...schoolField, <School key={schoolField.length} />])
+    }
     return (
         <>
             <fieldset>
                 <legend>Educational Background</legend>
-                <School />
-                <School />
+                {schoolField}
+                <button onClick={handleAdd}>Add</button>
             </fieldset>
         </>
     )
@@ -40,4 +44,3 @@ function School() {
         </div>
     )
 }
-
