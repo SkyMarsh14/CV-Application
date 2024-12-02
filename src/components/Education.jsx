@@ -19,7 +19,7 @@ export default function Education({ setEducationInfo, educationInfo }) {
         const updateSchools = educationInfo.map(school =>
             school.id === id
                 ? { ...school, [field]: value }
-                : school
+                : {...school}
         )
         setEducationInfo(updateSchools);
     }
