@@ -1,4 +1,4 @@
-export default function Preview({generalInfo}){
+export default function Preview({generalInfo,educationInfo}){
     return(
         <section className="preview">
             <h3>Preview</h3>
@@ -11,10 +11,27 @@ export default function Preview({generalInfo}){
                     <div>{generalInfo.email}</div>
                 </div>
                 <div className="education">
-                    <h5>Education</h5>
-                    <div></div>
+                    <div className="education">
+                        <h5>Education</h5>
+                        <EducationPreview educationInfo={educationInfo} />
+                    </div>
                 </div>
             </div>
         </section>
+    )
+}
+
+function EducationPreview({educationInfo}){
+    return (
+        <>
+        {educationInfo.map((each,index)=>(
+            <div key={index}>
+               <div>Degree: {each.degree}</div>
+               <div>Institution: {each.institution}</div>
+               <div>Start Date: {each.startDate}</div>
+               <div>End Date: {each.endDate}</div>
+            </div>
+     ))}
+     </>
     )
 }
