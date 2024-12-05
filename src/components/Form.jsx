@@ -3,11 +3,11 @@ import Education from "./Education";
 import GeneralInfo from "./GeneralInfo";
 import Experience from "./Experience";
 
-export default function Form({setGeneralInfo,setEducationInfo, educationInfo}) {
+export default function Form() {
     return (
         <form>
-            <GeneralInfo setGeneralInfo={setGeneralInfo} />
-            <Education setEducationInfo={setEducationInfo} educationInfo={educationInfo} />
+            <GeneralInfo  />
+            <Education />
             <Experience />
         </form>
     )

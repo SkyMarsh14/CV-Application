@@ -1,5 +1,8 @@
-export default function GeneralInfo({setGeneralInfo}){
-    
+import { useContext } from "react";
+import UserContext from "./UserContext";
+
+export default function GeneralInfo(){
+    const {setGeneralInfo}=useContext(UserContext)
     function updateInput(e){
         const {id,value}=e.target;
         setGeneralInfo(previous=>(

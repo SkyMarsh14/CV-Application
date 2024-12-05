@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useState , useContext} from "react"
+import UserContext from "./UserContext";
 
-export default function Education({ setEducationInfo, educationInfo }) {
+export default function Education() {
+    const {setEducationInfo, educationInfo} = useContext(UserContext)
     function handleAdd(e) {
         e.preventDefault();
         setEducationInfo(previous=>[...previous, {

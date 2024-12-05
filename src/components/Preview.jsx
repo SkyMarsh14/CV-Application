@@ -1,4 +1,8 @@
-export default function Preview({generalInfo,educationInfo}){
+import UserContext from "./UserContext"
+import React, {useContext} from "react"
+
+export default function Preview(){
+    const {generalInfo, educationInfo}=useContext(UserContext);
     return(
         <section className="preview">
             <h3>Preview</h3>
@@ -13,7 +17,7 @@ export default function Preview({generalInfo,educationInfo}){
                 <div className="education">
                     <div className="education">
                         <h5>Education</h5>
-                        <EducationPreview educationInfo={educationInfo} />
+                        <EducationPreview />
                     </div>
                 </div>
             </div>
@@ -21,7 +25,8 @@ export default function Preview({generalInfo,educationInfo}){
     )
 }
 
-function EducationPreview({educationInfo}){
+function EducationPreview(){
+    const {educationInfo}=useContext(UserContext);
     return (
         <>
         {educationInfo.map((each,index)=>(
