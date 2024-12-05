@@ -31,6 +31,15 @@ const exampleExperience=[{
     positionTitle:"Software Engineer",
     startDate:"2014 Aug",
     endDate:"2017 Sep"
-}]
+},
+{   
+    id:crypto.randomUUID(),
+    companyName:"Apple",
+    responsibilities:"Build and maintain mobile applications using native (Swift, Kotlin) or cross-platform (React Native, Flutter) frameworks.",
+    positionTitle:"Swift Engineer",
+    startDate:"2010 June",
+    endDate:"2014 Jan",
+    }
+]
 
 export {exampleEducationInfo,exampleGeneralInfo, exampleExperience};

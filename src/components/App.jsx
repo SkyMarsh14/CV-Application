@@ -9,7 +9,7 @@ export default function App(){
     const [educationInfo, setEducationInfo]=useState(exampleEducationInfo);
     const [experienceInfo, setExperienceInfo]=useState(exampleExperience);
     return (
-        <UserContext.Provider value={{generalInfo, setGeneralInfo, educationInfo, setEducationInfo}} >
+        <UserContext.Provider value={{generalInfo, setGeneralInfo, educationInfo, setEducationInfo, experienceInfo, setExperienceInfo}} >
             <Form />
             <Preview />
         </UserContext.Provider>
