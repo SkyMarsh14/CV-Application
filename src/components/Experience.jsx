@@ -2,17 +2,32 @@ import { useContext } from "react"
 import UserContext from "./UserContext"
 
 export default function Experience() {
-    const { experienceInfo } = useContext(UserContext);
+    const { experienceInfo, setExperienceInfo } = useContext(UserContext);
+    function handleAdd(e){
+        e.preventDefault();
+    setExperienceInfo(previous=>
+        [...previous,
+        {
+        id:crypto.randomUUID(),
+        companyName:"",
+        responsibilities:"",
+        positionTitle:"",
+        startDate:"",
+        endDate:"",
+    }
+    ])
+}
     return (
         <>
             <fieldset>
                 <legend>Experience</legend>
                 {experienceInfo.map((inputField) => (
-                    <InputField
-                        key={inputField.id}
-                        inputField={inputField}
-                    />
+                        <InputField
+                            key={inputField.id}
+                            inputField={inputField}
+                        />
                 ))}
+                <button onClick={handleAdd}>Add</button>
             </fieldset>
         </>
     )
@@ -29,29 +44,34 @@ function InputField({ inputField }) {
             )
         );
     }
+    function removeField(){
+        const newExp = experienceInfo.filter(exp=>exp.id!==inputField.id);
+        setExperienceInfo(newExp);
+    }
     return (
         <div className="experience-input">
             <div className="company">
                 <label htmlFor="">Company: </label>
-                <input type="text" onChange={(e) => updateInput(e, "companyName")} value={inputField.companyName}/>
+                <input type="text" onChange={(e) => updateInput(e, "companyName")} value={inputField.companyName} placeholder="Software Coorp"/>
             </div>
             <div className="responsibilites">
                 <label htmlFor="">Responsibilities: </label>
-                <input type="text" onChange={(e) => updateInput(e, "responsibilities" )} value={inputField.responsibilities} />
+                <input type="text" onChange={(e) => updateInput(e, "responsibilities")} value={inputField.responsibilities} placeholder="
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus nibh eget dolor imperdiet, accumsan blandit massa vulputate. Nunc tristique nisi mollis augue blandit facilisis. Sed nec libero ac ligula eleifend placerat non non neque. Quisque in quam felis. Nullam nec sem mi. Sed sit amet egestas elit, sed vulputate erat. Proin ac elit ac ipsum tristique interdum. Nulla et sagittis nulla."/>
             </div>
             <div className="positionTitle">
                 <label htmlFor="">Position Title: </label>
-                <input type="text" onChange={(e) => updateInput(e, "positionTitle")} value={inputField.positionTitle}/>
+                <input type="text" onChange={(e) => updateInput(e, "positionTitle")} value={inputField.positionTitle} placeholder="Software Engneer"/>
             </div>
             <div className="startDate">
                 <label htmlFor="">Start Date: </label>
-                <input type="text" onChange={(e) => updateInput(e, "startDate")} value={inputField.startDate} />
+                <input type="text" onChange={(e) => updateInput(e, "startDate")} value={inputField.startDate} placeholder="MM/ YYYY"/>
             </div>
             <div className="endDate">
                 <label htmlFor="">End Date: </label>
-                <input type="text" onChange={(e)=>updateInput(e,"endDate")} value={inputField.endDate}/>
+                <input type="text" onChange={(e) => updateInput(e, "endDate")} value={inputField.endDate} placeholder="MM/ YYYY"/>
             </div>
-
+            <button onClick={removeField}>Remove</button>
         </div >
     )
 }

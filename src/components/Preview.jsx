@@ -1,26 +1,31 @@
 import UserContext from "./UserContext"
-import React, { useContext } from "react"
+import { useContext } from "react"
 
 export default function Preview() {
-    const { generalInfo } = useContext(UserContext);
     return (
         <section className="preview">
-            <h3>Preview</h3>
             <div id="page">
-                <div className="generalInfo">
-                    <h4>General Info</h4>
-                    <div className="job-title">{generalInfo.jobTitle}</div>
-                    <div>{generalInfo.firstName} {generalInfo.lastName}</div>
-                    <div>{generalInfo.number}</div>
-                    <div>{generalInfo.email}</div>
-                </div>
+                <h3>Preview</h3>
+                <GeneralInfoPreview />
                 <EducationPreview />
                 <ExperiencePreview />
             </div>
         </section>
     )
 }
-
+function GeneralInfoPreview(){
+    const {generalInfo}=useContext(UserContext);
+    return(
+        <div className="generalInfo">
+            <h4>General Info</h4>
+            <div className="location">Location: {generalInfo.location}</div>
+            <div>Name: {generalInfo.firstName} {generalInfo.lastName}</div>
+            <div>Number: {generalInfo.number}</div>
+            <div>Email: {generalInfo.email}</div>
+            <div>About Me: {generalInfo.aboutMe}</div>
+        </div>
+    )
+}
 function EducationPreview() {
     const { educationInfo } = useContext(UserContext);
     return (
