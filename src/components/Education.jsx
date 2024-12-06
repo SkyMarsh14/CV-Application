@@ -57,11 +57,11 @@ function School({ school, onRemove, onUpdate }) {
             </div>
             <div>
                 <label htmlFor="">Start Year</label>
-                <input type="number" name="startDate" value={school.startDate} onChange={(e)=> onUpdate("startDate", e.target.value)} placeholder="MM / YYYY"/>
+                <input type="month" name="startDate" value={school.startDate} onChange={(e)=> onUpdate("startDate", e.target.value)} placeholder="MM / YYYY"/>
             </div>
             <div>
                 <label htmlFor="">End Year</label>
-                <input type="number" name="endDate" value={school.endDate} onChange={(e)=> onUpdate("endDate",e.target.value)} placeholder="MM/ YYYY"/>
+                <input type="month" name="endDate" value={school.endDate} onChange={(e)=> onUpdate("endDate",e.target.value)} placeholder="MM/ YYYY"/>
             </div>
             <button onClick={onRemove} className="remove-field-btn">Remove</button>
         </div>
