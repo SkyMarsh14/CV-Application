@@ -4,7 +4,7 @@ import { useState } from "react";
 import UserContext from "./UserContext";
 import Header from "./Header";
 import { emptyGeneralInfo, emptyEducationInfo, emptyExperienceInfo } from "./emptyInfo";
-
+import "../styles/icons.css";
 export default function App() {
   const [generalInfo, setGeneralInfo] = useState(emptyGeneralInfo);
   const [educationInfo, setEducationInfo] = useState(emptyEducationInfo);

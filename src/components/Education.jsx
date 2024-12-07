@@ -52,18 +52,18 @@ function School({ school, onRemove, onUpdate }) {
                 <input name="insitution" value={school.institution} onChange={(e) => onUpdate("institution", e.target.value)} placeholder="School Name"></input>
             </div>
             <div>
-                <label htmlFor="">Degree</label>
+                <label htmlFor="">Degree: </label>
                 <input type="text" name="degree" onChange={(e)=> onUpdate("degree", e.target.value) } value={school.degree} placeholder="Degree"/>
             </div>
             <div>
-                <label htmlFor="">Start Year</label>
+                <label htmlFor="">Start Year: </label>
                 <input type="month" name="startDate" value={school.startDate} onChange={(e)=> onUpdate("startDate", e.target.value)} placeholder="MM / YYYY"/>
             </div>
             <div>
-                <label htmlFor="">End Year</label>
+                <label htmlFor="">End Year: </label>
                 <input type="month" name="endDate" value={school.endDate} onChange={(e)=> onUpdate("endDate",e.target.value)} placeholder="MM/ YYYY"/>
             </div>
-            <button onClick={onRemove} className="remove-field-btn">Remove</button>
+            <button onClick={onRemove} className="remove-field-btn">Remove: </button>
         </div>
     )
 }

@@ -64,12 +64,11 @@ export default function GeneralInfo() {
       </div>
       <div className="aboutMe">
         <label htmlFor="aboutMe">About Me: </label>
-        <input
-          type="text"
+        <textarea
           id="aboutMe"
           onChange={updateInput}
           value={generalInfo.aboutMe}
-          placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum posuere urna, ut tincidunt sem facilisis id. Integer sodales, turpis eu malesuada facilisis, tellus felis molestie felis, ac scelerisque dolor lorem ac magna. Sed viverra, ipsum a egestas gravida, metus tortor ullamcorper ex, eget convallis lectus massa non eros. Donec erat turpis, cursus vitae nunc quis, tincidunt maximus purus. Nam vel placerat metus. Donec eu commodo justo, quis ultricies purus. Sed purus diam, placerat at augue quis, imperdiet scelerisque ligula. Donec posuere dolor eget blandit lacinia. Cras ex sapien, gravida ut pretium at, lacinia vitae mi. Donec consequat magna ac risus condimentum, nec consectetur urna tincidunt. Vestibulum id magna in urna ornare consequat et sed quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc in mauris in turpis eleifend interdum. Proin tempor orci in urna porttitor hendrerit. Vivamus rhoncus placerat risus vitae porttitor."
+          placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum posuere urna, ut tincidunt sem facilisis id. Integer sodales, turpis eu malesuada facilisis, tellus felis molestie felis, ac scelerisque dolor lorem ac magna. Sed viverra, ipsum a egestas gravida, metus tortor ullamcorper ex, eget convallis lectus massa non eros. Donec erat turpis, cursus vitae nunc quis, tincidunt maximus purus. Nam vel placerat metus. Donec eu commodo justo, quis ultricies purus. Sed purus diam, placerat at augue quis, imperdiet scelerisque ligula. Donec posuere dolor eget blandit lacinia. Cras ex sapien, gravida ut pretium at, lacinia vitae mi. "
         />
       </div>
     </fieldset>

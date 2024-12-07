@@ -1,3 +1,9 @@
+:root{
+    --fs-600:1.2em;
+    --fs-1200:1.5em;
+    --bg-form-input:#94a3b8;
+    --color--theme:#0394fc;
+}
 body{
     font-size:16px;
 }
@@ -17,10 +23,27 @@ body{
     }
 }
 legend{
-    font-size:1.5em;
+    font-size:1.2em;
 }
 #root{
     display:grid;
-    max-width: 80ch;
-    margin:0 auto;
+}
+textarea{
+    width:100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size:var(--fs-600);
+}
+h1{
+    font-size:var(--fs-1200);
+}
+.school-input,
+.experience-input{
+    margin:0.5em;
+    padding:0.5em;
 }

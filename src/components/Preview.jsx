@@ -19,10 +19,10 @@ function GeneralInfoPreview(){
         <div className="generalInfo">
             <h4>General Info</h4>
             <div className="location">Location: {generalInfo.location}</div>
-            <div>Name: {generalInfo.firstName} {generalInfo.lastName}</div>
-            <div>Number: {generalInfo.number}</div>
-            <div>Email: {generalInfo.email}</div>
-            <div>About Me: {generalInfo.aboutMe}</div>
+            <div className="name">Name: {generalInfo.firstName} {generalInfo.lastName}</div>
+            <div className="number">Number: {generalInfo.number}</div>
+            <div className="email">Email: {generalInfo.email}</div>
+            <div className="aboutMe">About Me: {generalInfo.aboutMe}</div>
         </div>
     )
 }
@@ -50,11 +50,10 @@ function ExperiencePreview(){
             <h6>Experience</h6>
             {experienceInfo.map((each,index)=>(
                 <div key={index}>
-                    <div>Company Name: {each.companyName}</div> 
-                    <div>Responsibilities: {each.responsibilities}</div>
+                    <div>Company Name: {each.companyName} </div> 
                     <div>Position Title: {each.positionTitle}</div>
-                    <div>Start Date: {each.startDate}</div>
-                    <div>End Date: {each.endDate}</div>
+                    <div>Duration: {each.startDate} ~ {each.endDate}</div>
+                    <div>Responsibilities: {each.responsibilities}</div>
                 </div>
             ))}
         </div>

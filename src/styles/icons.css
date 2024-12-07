@@ -1,0 +1,39 @@
+h4::before{
+    content:"";
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('../assets/person-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+h5::before{
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url('../assets/education-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+h6::before{
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url('../assets/work-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}

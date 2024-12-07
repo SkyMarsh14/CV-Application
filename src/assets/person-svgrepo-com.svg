@@ -1,2 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M400,387.575L400,387.575C469.142,387.575 526.038,330.68 526.038,261.538C526.038,192.395 469.142,135.5 400,135.5L400,135.5C330.858,135.5 273.963,192.395 273.963,261.538C273.963,330.68 330.858,387.575 400,387.575ZM400,442.95C232.425,442.95 125,535.425 125,580.45L125,664.525L675,664.525L675,580.45C675,526 573.3,442.95 400,442.95Z" style="fill:rgb(147,197,253);fill-rule:nonzero;"/>
+</svg>

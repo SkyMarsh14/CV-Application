@@ -56,8 +56,7 @@ function InputField({ inputField }) {
             </div>
             <div className="responsibilites">
                 <label htmlFor="">Responsibilities: </label>
-                <textarea type="text" onChange={(e) => updateInput(e, "responsibilities")} value={inputField.responsibilities} placeholder="
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus nibh eget dolor imperdiet, accumsan blandit massa vulputate. Nunc tristique nisi mollis augue blandit facilisis. Sed nec libero ac ligula eleifend placerat non non neque. Quisque in quam felis. Nullam nec sem mi. Sed sit amet egestas elit, sed vulputate erat. Proin ac elit ac ipsum tristique interdum. Nulla et sagittis nulla." />
+                <textarea type="text" onChange={(e) => updateInput(e, "responsibilities")} value={inputField.responsibilities} placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus nibh eget dolor imperdiet, accumsan blandit massa vulputate. Nunc tristique nisi mollis augue blandit facilisis. Sed nec libero ac ligula eleifend placerat non non neque. Quisque in quam felis. Nullam nec sem mi. Sed sit amet egestas elit, sed vulputate erat. Proin ac elit ac ipsum tristique interdum. Nulla et sagittis nulla." />
             </div>
             <div className="positionTitle">
                 <label htmlFor="">Position Title: </label>

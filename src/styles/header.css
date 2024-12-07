@@ -1,0 +1,17 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    margin:auto 2em;
+    padding-top:1em;
+}
+.inputControl{
+    display:flex;
+    align-items: center;
+    gap:2em;
+}
+.inputControl button{
+    border-radius: 6px;
+    border-color: var(--color--theme);
+    color:var(--color--theme);
+    font-size:0.8em;
+}
