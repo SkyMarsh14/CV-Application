@@ -1,11 +1,11 @@
 import UserContext from "./UserContext"
 import { useContext } from "react"
+import  "../styles/preview.css";
 
 export default function Preview() {
     return (
         <section className="preview">
             <div id="page">
-                <h3>Preview</h3>
                 <GeneralInfoPreview />
                 <EducationPreview />
                 <ExperiencePreview />
@@ -17,12 +17,13 @@ function GeneralInfoPreview(){
     const {generalInfo}=useContext(UserContext);
     return(
         <div className="generalInfo">
-            <h4>General Info</h4>
-            <div className="location">Location: {generalInfo.location}</div>
-            <div className="name">Name: {generalInfo.firstName} {generalInfo.lastName}</div>
-            <div className="number">Number: {generalInfo.number}</div>
-            <div className="email">Email: {generalInfo.email}</div>
-            <div className="aboutMe">About Me: {generalInfo.aboutMe}</div>
+            <h4 className="name">{generalInfo.firstName} {generalInfo.lastName}</h4>
+            <div className="contacts-preview">
+                <div className="location">{generalInfo.location}</div>
+                <div className="number">{generalInfo.number}</div>
+                <div className="email">{generalInfo.email}</div>
+            </div>
+            <div className="aboutMe">{generalInfo.aboutMe}</div>
         </div>
     )
 }
@@ -30,13 +31,12 @@ function EducationPreview() {
     const { educationInfo } = useContext(UserContext);
     return (
         <div className="education">     
-            <h5>Educatoin</h5>
+            <h5>Education</h5>
             {educationInfo.map((each, index) => (
                 <div key={index}>
-                    <div>Degree: {each.degree}</div>
-                    <div>Institution: {each.institution}</div>
-                    <div>Start Date: {each.startDate}</div>
-                    <div>End Date: {each.endDate}</div>
+                    <div className="degreePreview">{each.degree}</div>
+                    <div>{each.institution}</div>
+                    <div>{each.startDate} ~ {each.endDate}</div>
                 </div>
             ))}
         </div>
@@ -46,14 +46,14 @@ function EducationPreview() {
 function ExperiencePreview(){
     const {experienceInfo}=useContext(UserContext);
     return (
-        <div className="education">
+        <div className="experience">
             <h6>Experience</h6>
             {experienceInfo.map((each,index)=>(
-                <div key={index}>
-                    <div>Company Name: {each.companyName} </div> 
-                    <div>Position Title: {each.positionTitle}</div>
-                    <div>Duration: {each.startDate} ~ {each.endDate}</div>
-                    <div>Responsibilities: {each.responsibilities}</div>
+                <div className="experienceOutput" key={index}>
+                    <div>{each.positionTitle}</div>
+                    <div>{each.companyName} </div> 
+                    <div>{each.startDate} ~ {each.endDate}</div>
+                    <div>{each.responsibilities}</div>
                 </div>
             ))}
         </div>

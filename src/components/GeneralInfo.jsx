@@ -12,7 +12,7 @@ export default function GeneralInfo() {
       <legend>General Information</legend>
 
       <div className="firstName">
-        <label>First Name : </label>
+        <label>First Name</label>
         <input
           id="firstName"
           onChange={updateInput}
@@ -22,7 +22,7 @@ export default function GeneralInfo() {
       </div>
 
       <div className="lastName">
-        <label>Last Name : </label>
+        <label>Last Name</label>
         <input
           type="text"
           id="lastName"
@@ -31,8 +31,8 @@ export default function GeneralInfo() {
           placeholder="John"
         />
       </div>
-      <div className="location">
-        <label htmlFor="">Location : </label>
+      <div >
+        <label htmlFor="">Location</label>
         <input
           type="text"
           id="location"
@@ -41,8 +41,8 @@ export default function GeneralInfo() {
           placeholder="NYC, USA"
         />
       </div>
-      <div className="number">
-        <label htmlFor="number">Phone Number : </label>
+      <div>
+        <label htmlFor="number">Phone Number</label>
         <input
           id="number"
           type="tel"
@@ -52,8 +52,8 @@ export default function GeneralInfo() {
         />
       </div>
 
-      <div className="email">
-        <label htmlFor="email">Email : </label>
+      <div>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
@@ -63,7 +63,7 @@ export default function GeneralInfo() {
         />
       </div>
       <div className="aboutMe">
-        <label htmlFor="aboutMe">About Me: </label>
+        <label htmlFor="aboutMe">About Me</label>
         <textarea
           id="aboutMe"
           onChange={updateInput}

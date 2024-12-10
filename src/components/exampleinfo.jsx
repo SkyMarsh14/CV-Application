@@ -13,16 +13,16 @@ const exampleEducationInfo = [{
     degree: "Master's in Coumputer Science",
     institution: "Harvard University",
     city: "Colorado City",
-    startDate: "2016",
-    endDate: "2018"
+    startDate: "2016-03",
+    endDate: "2018-04"
 },
 {
     id: crypto.randomUUID(),
     degree: "Bachelor in Information and Technology",
     institution: "NotAReal University",
     city: "New York City",
-    startDate: "2014",
-    endDate: "2016"
+    startDate: "2014-08",
+    endDate: "2016-04"
 }]
 
 const exampleExperience = [{
@@ -30,16 +30,16 @@ const exampleExperience = [{
     companyName: "Microsoft",
     responsibilities: "Developed and maintained web applications using a modern stack: React (frontend), Node.js (backend), and MongoDB (database).",
     positionTitle: "Software Engineer",
-    startDate: "2014 Aug",
-    endDate: "2017 Sep"
+    startDate: "2014-08",
+    endDate: "2017-09"
 },
 {
     id: crypto.randomUUID(),
     companyName: "Apple",
     responsibilities: "Build and maintain mobile applications using native (Swift, Kotlin) or cross-platform (React Native, Flutter) frameworks.",
     positionTitle: "Swift Engineer",
-    startDate: "2010 June",
-    endDate: "2014 Jan",
+    startDate: "2010-07",
+    endDate: "2014-01",
 }
 ]
 

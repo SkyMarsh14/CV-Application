@@ -32,6 +32,10 @@ function ClearBtn() {
       setEducationInfo(exampleEducationInfo);
       setExperienceInfo(exampleExperience);
     }
+    function printout(){
+      window.print();
+  
+    }
     return (
       <div className="inputControl">
         <button type="button" onClick={clearInputs}>
@@ -40,6 +44,7 @@ function ClearBtn() {
         <button type="button" onClick={loadExample}>
           Load Exmaple
         </button>
+        <button type="butotn" onClick={printout} >Print</button>
       </div>
     );
   }

@@ -1,8 +1,34 @@
-# React + Vite
+# CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is part of **The Odin Project's React curriculum** and is designed to help learners build a functional CV/résumé application. Users can input their information and generate a CV dynamically. The project emphasizes React fundamentals such as state, props, and component structuring.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## Features
+
+- **General Information Section**  
+  - Inputs for name, email, and phone number.
+
+- **Educational Experience Section**  
+  - Fields for school name, title of study, and study dates.
+
+- **Practical Experience Section**  
+  - Inputs for company name, position title, main responsibilities, and employment dates.
+
+- **Editable and Submittable Forms**  
+  - **Submit Button**: Displays user input as formatted HTML.  
+  - **Edit Button**: Restores input fields with previously entered data for editing.
+
+---
+
+## Technologies Used
+
+- React
+- CSS for styling
+
+---
+
+## File Structure
+

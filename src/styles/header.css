@@ -1,12 +1,14 @@
 header{
     display:flex;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: space-around;
     margin:auto 2em;
     padding-top:1em;
     padding-bottom:0.5em;
 }
 .inputControl{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     gap:2em;
 }

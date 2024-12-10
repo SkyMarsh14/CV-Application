@@ -44,6 +44,7 @@
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-size:1.1em;
 }
 .experienceOutput>div:nth-child(2){
     font-size:1.1em;
