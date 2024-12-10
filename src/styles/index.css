@@ -27,23 +27,18 @@ legend{
     font-size:600;
 }
 header{
-    grid-area:header;
-}
-form{
-    grid-area:form;
-}
-section.preview{
-    grid-area:preview;
+    grid-column: 1/-1;
 }
 #root{
     display:grid;
-    grid-template-areas: 
-    "header header"
-    "form preview"
-    ;
     gap:1em;
-    grid-template-columns: 1fr 1fr;
-    margin:0 2em ;
+    margin:0 2em;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+}
+@media (max-width:650px) {
+    #root{
+        grid-template-columns: 1fr;
+    }
 }
 textarea{
     width:100%;
@@ -80,4 +75,7 @@ textarea {
     display:flex;
     flex-direction: column;
     margin:0.5em 0;
+}
+fieldset{
+    margin-bottom:1.5em ;
 }
