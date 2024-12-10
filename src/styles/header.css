@@ -3,6 +3,7 @@ header{
     justify-content: space-between;
     margin:auto 2em;
     padding-top:1em;
+    padding-bottom:0.5em;
 }
 .inputControl{
     display:flex;
@@ -10,8 +11,9 @@ header{
     gap:2em;
 }
 .inputControl button{
-    border-radius: 6px;
+    border-radius: 0.5em;
     border-color: var(--color--theme);
     color:var(--color--theme);
     font-size:0.8em;
+    padding:0.2em 0.8em;
 }

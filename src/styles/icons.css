@@ -1,3 +1,17 @@
+h1::before{
+    content:"";
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('../assets/paper-pencil-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+
 h4::before{
     content:"";
     background-size:contain;
@@ -36,4 +50,54 @@ h6::before{
     margin-top:-0.2em;
     margin-right:0.2em;
     margin-left:0.2em;
+}
+.location::before{
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url('../assets/map-pin-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+.email::before{
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url('../assets/email-1-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.1em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+.number::before{
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url('../assets/phone-alt-svgrepo-com.svg');
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    margin-top:-0.2em;
+    margin-right:0.2em;
+    margin-left:0.2em;
+}
+
+.remove-field-btn{
+    width:10ch;
+    height:1.5em;
+    background-image:url('../assets/trash-blank-alt-svgrepo-com.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    margin:0.5em 0;
+    background-color:rgb(152, 152, 222);
 }

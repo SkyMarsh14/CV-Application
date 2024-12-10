@@ -1,0 +1,50 @@
+#page{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:0.7em 0.5em;
+
+}
+.education>div{
+    padding:0.5em;
+    margin:0.3em;
+    display:grid;
+    gap:0.5em;
+}
+.degreePreview{
+    font-weight: 800;
+    color:rgb(101, 101, 192);
+    font-size:1.2em;
+}
+
+.experienceOutput>div:first-child{
+    font-weight:800;
+    font-size:1.2em;
+    color:rgb(101, 101, 192);
+}
+.experienceOutput{
+    margin:0.3em;
+    padding:0.5em;
+    display:grid;
+    gap:0.5em;
+}
+.name{
+    font-size:2em;
+    font-weight:800;
+    text-align: center;
+}
+.generalInfo{
+    display:grid;
+    gap:1.5em;
+    margin:1em;
+}
+.contacts-preview{
+    display:grid;
+    gap:0.5em;
+}
+.contacts-preview{
+    display:flex;
+    justify-content: center;
+}
+.experienceOutput>div:nth-child(2){
+    font-size:1.1em;
+    font-weight: 600;
+}
