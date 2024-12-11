@@ -27,8 +27,11 @@ This project is part of **The Odin Project's React curriculum** and is designed 
 
 - React
 - CSS for styling
+- Netlify to deploy
 
 ---
 
-## File Structure
+## Live version
+
+Live version is available at https://keen-crepe-eaa759.netlify.app
 
